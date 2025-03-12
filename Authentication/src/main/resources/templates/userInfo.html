@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ユーザー情報</title>
+  </head>
+  <body>
+    <h1>ユーザー情報</h1>
+    <p>ユーザーID:[[${session.loginId}]]</p>
+    <p><a th:href="@{/user/news}">ユーザー情報</a></p>
+    <p><a th:href="@{/logout}">ログアウト</a></p>
+  </body>
+</html>
